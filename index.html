@@ -4,21 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
   <title>Software library</title>
 </head>
 
 <body>
   <header class="navbar">
     <div class="container">
-      <nav class="navbar-menu">
-
+      <nav class="navbar-wrapper">
+        <img src="img/Logo.png" alt="Img: logo" class="navbar-logo" />
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Home</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Landings</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Pages</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Docs</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Help</a>
+          </li>
+          <li class="navbar-menu__item">
+            <button class="navbar-menu__button">
+              Get it now
+            </button>
+          </li>
+        </ul>
+        <!-- /.navbar-menu -->
       </nav>
-      <!-- /.header__menu -->
+      <!-- /. navbar-wrapper-->
+      <h1 class="navbar-name">Awesome & powerfull landing for your&nbsp;software library</h1>
+      <p class="navbar-title">An awesome & powefull JavaScript library for building user interfaces</p>
+      <div class="navbar-button">
+        <button class="navbar-button__git">
+          <div class="navbar-button-wrapper">
+            <img src="img/git.png" alt="Icon: Git" class="navbar-button__git__icon">
+            View on Github
+            <div class="navbar-button-wrapper">
+        </button>
+        <button class="navbar-button__doc">
+          <div class="navbar-button-wrapper">
+            Documentation
+            <img src="img/arrow.svg" alt="Icon: Arrow" class="navbar-button__doc__icon">
+          </div>
+        </button>
+      </div>
+      <p class="navbar-subtitle">Zip-archive with production version, all sources and addons.</p>
     </div>
     <!-- /.container -->
   </header>
-  <!-- /.header -->
+  <!-- /.navbar -->
 </body>
 
 </html>

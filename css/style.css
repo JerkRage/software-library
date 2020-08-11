@@ -340,4 +340,176 @@ template {
 [hidden] {
   display: none;
 }
+
+@font-face : {
+  font-family: 'HK Grotesk';
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff");
+  src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #1565D8;
+  padding-bottom: 275px;
+  position: relative;
+}
+
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-menu {
+  width: 594px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 26px 0;
+  list-style: none;
+}
+
+.navbar-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.navbar-menu__button {
+  color: #ffffff;
+  background-color: #1565D8;
+  padding: 13px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.navbar-name {
+  padding-top: 96px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar-title {
+  padding-top: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+.navbar-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-button__git {
+  padding: 16px 26px 16px 37px;
+  background: #ffffff;
+  border-radius: 2000px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  color: #1565D8;
+  margin-right: 16px;
+}
+
+.navbar-button__git__icon {
+  margin-right: 5px;
+}
+
+.navbar-button__doc {
+  padding: 16px 31px 16px 25px;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2000px;
+  background-color: #1565D8;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.navbar-button__doc__icon {
+  margin-left: 14px;
+}
+
+.navbar-subtitle {
+  padding-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
