@@ -395,6 +395,20 @@ body {
           align-items: center;
 }
 
+.navbar-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 620px;
+  height: 376px;
+  background-image: url(../img/Shape-1.png);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 307px;
+  left: -226px;
+  z-index: 10;
+}
+
 .navbar-menu {
   width: 594px;
   display: -webkit-box;
@@ -485,13 +499,14 @@ body {
   padding-top: 40px;
 }
 
-.navbar-button__wrapper {
+.navbar-button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .navbar-button__git {

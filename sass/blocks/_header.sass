@@ -17,6 +17,17 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &::before
+      content: ''
+      position: absolute
+      width: 620px
+      height: 376px
+      background-image: url(../img/Shape-1.png)
+      background-repeat: no-repeat
+      object-fit: cover
+      top: 307px
+      left: -226px
+      z-index: 10
   &-menu
     width: 594px
     display: flex
@@ -78,9 +89,10 @@
     align-items: center
     justify-content: center
     padding-top: 40px
-    &__wrapper
+    &-wrapper
       display: flex
       align-items: center
+      position: relative
     &__git
       vertical-align: center
       padding: 16px 26px 16px 38px
