@@ -50,16 +50,10 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
-      &__button
-        width: 9px
-        height: 16px
-        padding: 0
-        margin-left: 4px
-        border: none
-        background-color: $bg-blue
       &__img
         vertical-align: middle
     &__button
+      display: inline-block
       color: $light
       background-color: $bg-blue
       padding: 13px 24px
@@ -71,6 +65,11 @@
       border: 2px solid $light
       box-sizing: border-box
       border-radius: 8px
+      cursor: pointer
+      &:hover
+        color: $bg-blue
+        background-color: $light
+        transition: 0.5s
   &-name
     padding-top: 96px
     font-family: HK Grotesk
@@ -101,8 +100,10 @@
       align-items: center
       position: relative
     &__git
-      vertical-align: center
+      display: inline-block
+      position: relative
       padding: 16px 26px 16px 38px
+      border: 2px solid $light
       background: $light
       border-radius: 2000px
       font-style: normal
@@ -112,13 +113,37 @@
       border: none
       color: $bg-blue
       margin-right: 16px
+      text-decoration: none
       &__icon
         margin-right: 5px
+      &:before 
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 10px
+        width: 100%
+        height: 2px
+        background-color: $bg-blue
+        transition: 0.3s
+        transform: scaleX(0)
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 5px
+        width: 100%
+        height: 2px
+        background-color: $bg-blue
+        transition: 0.5s
+        transform: scaleX(0)
+      &:hover 
+        &:before, &:after
+          transform: scaleX(1)
     &__doc
-      vertical-align: center
+      position: relative
+      display: inline-block
       padding: 16px 30px 16px 25px
       border: 2px solid $light
-      box-sizing: border-box
       border-radius: 2000px
       background-color: $bg-blue
       font-style: normal
@@ -126,8 +151,33 @@
       font-size: 18px
       line-height: 25px
       color: $light
+      text-decoration: none
+      overflow: hidden
       &__icon
         margin-left: 14px
+      &:before 
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 10px
+        width: 100%
+        height: 2px
+        background-color: $light
+        transition: 0.3s
+        transform: scaleX(0)
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 5px
+        width: 100%
+        height: 2px
+        background-color: $light
+        transition: 0.5s
+        transform: scaleX(0)
+      &:hover 
+        &:before, &:after
+          transform: scaleX(1)
   &-subtitle
     padding-top: 16px
     font-style: normal
@@ -137,4 +187,4 @@
     text-align: center
     color: $light
     margin: 0
-  
+
